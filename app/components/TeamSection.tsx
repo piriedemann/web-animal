@@ -2,12 +2,14 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { getImagePath } from '../utils/paths';
 
 export default function TeamSection() {
   const team = [
     {
-      name: 'Pablo Riedemann H.',
-      image: '/images/foto-pr.jpg',
+      name: 'Pablo Riedemann',
+      role: 'Co-fundador',
+      image: getImagePath('/images/foto-pr.jpg'),
       points: [
         'Soy un CFA Charterholder, la mayor certificación en el área de finanzas global. Estudié más de 1.000 horas para obtenerla, y tiene un código de ética muy rígido.',
         'Tengo 5 años de experiencia en la industria financiera entre una compañía de inversiones en Chile y una productora de contenido financiero en EEUU.',
@@ -15,8 +17,9 @@ export default function TeamSection() {
       ]
     },
     {
-      name: 'Francisco Verdugo U.',
-      image: '/images/foto-fv.jpg',
+      name: 'Francisco Villagrán',
+      role: 'Co-fundador',
+      image: getImagePath('/images/foto-fv.jpg'),
       points: [
         'Soy el Gerente Comercial de DVA Capital y tengo más de 12 años de experiencia en inversiones.',
         'Aprendí la reglas del dinero a la fuerza, después de estar muy endeudado por tener que apoyar a mi familia.',

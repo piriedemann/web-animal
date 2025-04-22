@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { getImagePath } from '../utils/paths';
 
 export default function Hero() {
   return (
@@ -25,7 +26,7 @@ export default function Hero() {
             {/* Logo */}
             <div className="mb-8">
               <Image
-                src="/images/logo.png"
+                src={getImagePath("/images/logo.png")}
                 alt="Animales Financieros Logo"
                 width={80}
                 height={80}
@@ -70,7 +71,7 @@ export default function Hero() {
             {/* Imagen de las escaleras */}
             <div className="relative h-[300px] w-full rounded-lg overflow-hidden mb-8">
               <Image
-                src="/images/hero-image.jpg"
+                src={getImagePath("/images/hero-image.jpg")}
                 alt="Escaleras"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -83,7 +84,7 @@ export default function Hero() {
               <p className="text-sm text-gray-400 mb-2">Acreditados por</p>
               <div className="flex justify-center">
                 <Image
-                  src="/images/camv-logo.png"
+                  src={getImagePath("/images/camv-logo.png")}
                   alt="CAMV Logo"
                   width={140}
                   height={24}
